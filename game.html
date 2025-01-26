@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pikachu game</title>
+  <link rel="stylesheet" href="assets/css/game.css">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <div id="gameName" style="margin-top: 50px;"></div>
+    <h1 class="text-center text-5xl font-semibold" style="color: var(--color1--);">Pikachu Game</h1>
+  </div>
+  
+  <canvas id="gameCanvas" width="1000" height="400"></canvas>
+
+  <div id="startGame">
+    <h1 class="font-sans font-semibold">Hello</h1>
+    <button onclick="startGame();">start</button>
+  </div>
+
+  
+  <div id="loseMessage">
+    <h1 class="font-sans font-semibold">Lose !</h1>
+    <button onclick="location.reload()">play</button>
+  </div>
+  
+<script src="assets/js/game.js"></script>
+</body>
+</html>

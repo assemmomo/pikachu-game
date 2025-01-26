@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/assets/fonts/MickeyMouse_PERSONAL_USE_ONLY.otf') format('woff2'),
+         url('/assets/fonts/MickeyMouse_PERSONAL_USE_ONLY.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+::-webkit-scrollbar{
+    background-color: var(--darkColor--);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--color1--);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1--:rgb(199, 199, 25);
+    --darkColor--:#141414;
+    --font1--: 'MyCustomFont';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--darkColor--);
+}
+.fontSpacing{
+    letter-spacing: 6px;
+}
+.fontSpacing2{
+    letter-spacing: 12px;
+}
+.bigFontSpacing{
+    letter-spacing: 35px;
+}
+.myFont{
+    font-family: var(--font1--);
+}
+nav{
+    height: 70px;
+    background-color: var(--darkColor--);
+    z-index: 100 !important;
+}
+nav > div{
+    width: 33%;
+}
+nav li,nav h1{
+    color: var(--color1--);
+    font-family: var(--font1--);
+}
+nav li{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+nav li:hover{
+    letter-spacing: 7px;
+    font-size: 22px;
+}
+.img1{
+    bottom: -50px;
+    right: 250px;
+    width: 900px;
+}
+.sec1Btn:hover{
+    background-color: var(--darkColor--);
+    border: 2px solid var(--color1--);
+    color: var(--color1--);
+}
+#animated-img{
+    transition: 0.8s;
+    transform: translateX(-200%);
+}
+#animated-img2{
+    transition: 0.8s;
+    transform: translateX(200%);
+}

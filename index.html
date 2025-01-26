@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pikachu</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <nav class="flex w-full justify-around items-center fixed">
+        <div class="flex items-center justify-center fontSpacing text-5xl">
+            <h1>pik<span class="text-white text-6xl">a</span>chu</h1>
+        </div>
+
+        <div>
+            <ul class="flex items-center justify-around  fontSpacing text-xl">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="#sec2">About</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="flex items-center justify-center fontSpacing text-xl gap-20">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="sec1 w-full h-160">
+        <div class="flex items-center justify-center">
+            <h1 style="font-size: 300px;" class="myFont text-white bigFontSpacing">pikachu</h1>
+        </div>
+        <div class="img1 absolute">
+            <img draggable="false" src="./assets/imgs/poki (2).png" alt="">
+        </div>
+        <div class="relative flex flex-col items-start justify-around w-100 h-70 left-100">
+            <h4 class="w-70 text-white text-xl">pikachu is paddle game, you can play it with your friends!</h4>
+            <div>
+                <a class="sec1Btn w-80 h-18 flex justify-center items-center bg-(--color1--) rounded-3xl cursor-pointer font-bold text-xl" href="game.html">Play now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec2" class="sec2 w-full h-500 flex flex-col justify-center items-center">
+        <div class="w-full h-200 flex justify-between items-center">
+            <div class="w-1/2 h-full flex justify-center items-center">
+                <img class="w-200 transition-transform transform " src="assets/imgs/poki (3).png" alt="" id="animated-img">
+            </div>
+            <div class="w-1/2 h-full flex justify-center items-center">
+                <div class="w-130 h-100 flex flex-col justify-center items-start gap-10">
+                    <h1 class="text-9xl myFont fontSpacing2 text-white">About</h1>
+                    <p class="text-white text-xl font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eligendi praesentium cupiditate ullam. Quae dignissimos aspernatur non nesciunt, sapiente magni eveniet quod nostrum consequuntur quasi. Laboriosam esse nulla repellendus eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda possimus magni, sed fugiat placeat minus minima animi voluptatem eligendi, ut dicta, doloremque quos? Tenetur laudantium debitis dignissimos voluptatibus quia?</p>
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-200 flex justify-between items-center">
+            <div class="w-1/2 h-full flex justify-center items-center">
+                <div class="w-130 h-100 flex flex-col justify-center items-start gap-10">
+                    <h1 class="text-9xl myFont fontSpacing2 text-white">About</h1>
+                    <p class="text-white text-xl font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eligendi praesentium cupiditate ullam. Quae dignissimos aspernatur non nesciunt, sapiente magni eveniet quod nostrum consequuntur quasi. Laboriosam esse nulla repellendus eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda possimus magni, sed fugiat placeat minus minima animi voluptatem eligendi, ut dicta, doloremque quos? Tenetur laudantium debitis dignissimos voluptatibus quia?</p>
+                </div>
+            </div>
+            <div class="w-1/2 h-full flex justify-center items-center overflow-hidden">
+                <img class="w-200 transition-transform transform" src="assets/imgs/poki (1).png" alt="" id="animated-img2">
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full h-80 bg-(--color1--) flex justify-around items-center text-(--darkColor--)">
+        <div class="flex flex-col items-center">
+            <h3 class="text-2xl font-bold">pikachu</h3>
+            <p>&copy; 2023 Pikachu Game. All rights reserved.</p>
+            <p>Created by : Assem mohmaed</p>
+        </div>
+        <div class="flex flex-col items-center gap-5">
+            <h3 class="text-2xl font-bold">Quick Links</h3>
+            <ul class="flex flex-col items-center gap-5">
+                <li><a href="index.html" class="hover:underline text-xl">Home</a></li>
+                <li><a href="game.html" class="hover:underline text-xl">Game</a></li>
+                <li><a href="#sec2" class="hover:underline text-xl">About</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col items-center">
+            <h3 class="text-2xl font-bold">Follow Us</h3>
+            <ul class="flex gap-4">
+                <li><a target="_blank" href="https://www.facebook.com/assem.mohamed.9699" class="hover:underline text-xl">Facebook</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/assem-mohamed-a3b4a8294/" class="hover:underline text-xl">Linkedin</a></li>
+                <li><a target="_blank" href="https://github.com/assemmomo" class="hover:underline text-xl">Github</a></li>
+            </ul>
+        </div>
+    </footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
