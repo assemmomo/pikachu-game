@@ -4,13 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>pikachu game</title>
+  <link rel="icon" href="assets/imgs/poki (2).png">
   <link rel="stylesheet" href="assets/css/game.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="gameName" style="margin-top: 50px;"></div>
-    <h1 class="text-center text-5xl font-semibold" style="color: var(--color1--);">Pikachu Game</h1>
-  </div>
+
+  <nav class="flex w-full justify-around items-center fixed">
+    <div class="flex items-center justify-center fontSpacing text-5xl">
+        <h1>Pik<span class="text-white text-6xl">A</span>chu</h1>
+    </div>
+
+    <div>
+        <ul class="flex items-center justify-around  fontSpacing text-xl">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a href="index.html#sec2">About</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="flex items-center justify-center fontSpacing text-xl gap-20">
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </div>
+  </nav>
   
   <canvas id="gameCanvas" width="1000" height="400"></canvas>
 
