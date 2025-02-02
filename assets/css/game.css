@@ -5,7 +5,9 @@
 }
 :root{
     --color1--:rgb(199, 199, 25);
+    --color2--:#720b0b;
     --darkColor--:#141414;
+    --font1--: 'MyCustomFont';
 }
 body{
     background-color: var(--darkColor--);
