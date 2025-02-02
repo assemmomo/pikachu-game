@@ -1,10 +1,11 @@
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('/assets/fonts/MickeyMouse_PERSONAL_USE_ONLY.otf') format('woff2'),
-         url('/assets/fonts/MickeyMouse_PERSONAL_USE_ONLY.otf') format('woff');
+    src: url('/assets/fonts/MickeyMouse.otf') format('woff2'),
+         url('/assets/fonts/MickeyMouse.otf') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 ::-webkit-scrollbar{
     background-color: var(--darkColor--);
 }
@@ -18,6 +19,7 @@
 }
 :root{
     --color1--:rgb(199, 199, 25);
+    --color2--:#720b0b;
     --darkColor--:#141414;
     --font1--: 'MyCustomFont';
 }
@@ -37,7 +39,7 @@ body{
     letter-spacing: 35px;
 }
 .myFont{
-    font-family: var(--font1--);
+    font-family: var(--font1--), "Fredoka";
 }
 nav{
     height: 70px;
@@ -49,7 +51,7 @@ nav > div{
 }
 nav li,nav h1{
     color: var(--color1--);
-    font-family: var(--font1--);
+    font-family: var(--font1--) , Verdana, Geneva, Tahoma, sans-serif ;
 }
 nav li{
     width: 50px;
@@ -61,11 +63,16 @@ nav li{
 nav li:hover{
     letter-spacing: 7px;
     font-size: 22px;
+    color: var(--color2--);
 }
 .img1{
     bottom: -50px;
     right: 250px;
     width: 900px;
+}
+.sec1{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, #720b0b 20%, #141414 95%, #141414 100%);
 }
 .sec1Btn:hover{
     background-color: var(--darkColor--);
@@ -79,4 +86,12 @@ nav li:hover{
 #animated-img2{
     transition: 0.8s;
     transform: translateX(200%);
+}
+.about1{
+    transition: 0.8s;
+    transform: translateX(200%);
+}
+.about2{
+    transition: 0.8s;
+    transform: translateX(-200%);
 }
